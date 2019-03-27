@@ -267,7 +267,7 @@ nav {
 
 
 .box1 {
-	background-image: url("./Website_ScreenShots/TeaCozy.png");
+	background-image: url("./TeaCozy.png");
 	background-size: cover;
 }
 
@@ -378,18 +378,18 @@ nav {
 
 }
 .card-front.bg-violet {
-	background-image: url("./Website_ScreenShots/TeaCozy.png");
+	background-image: url("./TeaCozy.png");
 	background-size: 124%;
   background-position: center top;
 }
 .card-front.bg-magenta {
-	background-image: url("./Website_ScreenShots/Typ.png");
+	background-image: url("./Typ.png");
 	background-size: cover;
   background-position: center;
 
 }
 .card-front.bg-blue {
-	background-image: url("./Website_ScreenShots/Hogwarts.png");
+	background-image: url("./Hogwarts.png");
 	background-size: 124%;
   background-position: center top;
 }
