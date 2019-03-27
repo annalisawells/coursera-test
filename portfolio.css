@@ -1,0 +1,513 @@
+/* Colors:
+Light shades (background for dark on light or text of inverted design): #FFFDE7;
+Light Accent: #9D96AC;
+Main Brand Color(use liberally): #F8D354;
+Dark Accent: #702B46;
+Dark Shades(text for dark on light, or as backrgound for inverted designs): #271C36;
+dark dark: black;*/
+
+
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+	height: 100vh;
+	overflow: scroll;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Merienda', serif;
+}
+
+nav {
+	display: none;
+	width: 100%;
+	height: 65px;
+	background-color: rgba(0, 0, 0, .9);
+	color: #FFFDE7;
+	box-shadow: 4px 5px 15px #271C36;
+	border-radius: 4px;
+	position: fixed;
+	z-index: 99;
+}
+
+.nav-name {
+	padding: 15px;
+	width: 200px;
+	font-size: 2.25vmax;
+	font-family: 'Merienda', serif;
+}
+
+.innerNav a {
+	font-size: 1.5em;
+	float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #F8D354;
+	padding: 19px 35px;
+}
+
+.innerNav a:hover {
+	background: rgba(157, 150, 172, .3);
+}
+
+.sticky {
+	display: inline-block;
+}
+
+.content {
+	background-color: #FFFDE7;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.parallax {
+	background-image: url("./mountains.jpg");
+	
+	width: 100%;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name h1 {
+	padding-left: 25px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 5em;
+	margin: 0;
+	color: #271C36;
+	/*text-shadow: -1px -1px 0px #E3C176,
+    3px 3px 0px #E3C176,
+    6px 6px 0px #271C36;*/
+}
+
+.blurb {
+	padding: 40px 0;
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.blurb h1 {
+	align-self: center;
+	font-size: 5em;
+	color: #271C36;    margin: 8px;
+}
+
+.blurb h3 {
+	font-size: 1.75em;
+	margin: 0;
+}
+
+.subnav {
+	text-align: center;
+	font-weight: bold;
+}
+
+.subnav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	padding: 12px;
+	color: #F8D354;
+	width: 230px;
+}
+
+.subnav-link {
+	width: auto;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.social {
+	padding-top: 16px;
+	padding-bottom: 25px;
+}
+
+.social a {
+	color: #271C36;
+}
+
+#about {
+	padding: 60px;
+	position: relative;
+	display: inline-block;
+}
+
+#about h1, #portfolio h1 {
+	font-size: 6vmin;
+	margin: 0;
+	color: #9D96AC;
+}
+
+
+.aboutme {
+	align-items: center;
+	align-content: center;
+	width: 65%;
+	position: relative;
+	padding: 50px;
+  margin-left: 50px;
+  flex: 2;
+}
+
+.photo {
+	flex: 1;
+}
+
+#about img {
+	border-radius: 50%;
+	width: 80%;
+  height: auto;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+.skills {
+	background: #271C36;
+	position: relative;
+	padding: 50px 5px;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container ul {
+	padding: 10px;
+}
+
+.flex-container li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+
+.technical {
+	flex: 3;
+	background: #FFFDE7;
+	color: #271C36;
+	border-radius: 10px;
+	margin: 10px 30px;
+	font-size: 1.25em;
+}
+
+.technical h2 {
+	color: #702B46;
+}
+
+.soft-skills {
+	flex: 2;
+	background: #702B46;
+	color: #FFFDE7;
+	border-radius: 10px;
+	margin: 10px 30px;
+	font-size: 1.75vmin;
+}
+
+.soft-skills h2 {
+	color: #FFFDE7;
+}
+
+
+#portfolio {
+	margin-top: 75px;
+}
+
+#portfolio h1 {
+	padding: 30px;
+}
+
+.flex-gallery {
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	max-height: 100%;
+}
+
+.info {
+	display: none;
+}
+
+.info-active {
+	display: block;
+	color: #9D96AC;
+	background-color: rgba(39, 28, 54, 1);
+	padding: 10px;
+	font-weight: bold;
+}
+
+
+.box {
+	margin: 10px;
+	border: 3px solid #000;
+	box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+	min-height: 250px;
+	min-width: 320px;
+	flex: 1;
+}
+
+
+.box1 {
+	background-image: url("./Website_ScreenShots/TeaCozy.png");
+	background-size: cover;
+}
+
+.box2 {
+	background: #3498db;
+}
+
+.box3 {
+	background: #9b59b6;
+}
+
+.box4 {
+	background: #34495e;
+}
+
+.box5 {
+	background: #f1c40f;
+}
+
+.box6 {
+	background: #e67e22;
+}
+
+@media only screen and (max-device-width: 1366px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
+
+
+
+.cont {
+	margin: 50px;
+}
+
+/*-------- flex container --------*/
+.fc {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-flex-flow: row wrap;
+	position: relative;
+}
+.flex-item {
+	color: #fff;
+	height: 310px;
+	margin: 10px 0;
+	padding: 0;
+	width: 325px;
+	position: relative;
+}
+.flex-item-inner {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 310px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.flex-item-inner a {
+	color: #fff;
+	cursor: pointer;
+}
+
+/*-------- cards --------*/
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 285px;
+	height: 270px;
+	padding: 20px;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	justify-content: flex-end;
+	border: 3px solid #702B46;
+	border-radius: 6px;
+}
+.card-front i.tile-icon {
+	display: block;
+	margin: 10px auto 20px auto;
+	text-align: center;
+}
+.card-front h4 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+.card-front p.detail {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+
+}
+.card-front.bg-violet {
+	background-image: url("./Website_ScreenShots/TeaCozy.png");
+	background-size: 124%;
+  background-position: center top;
+}
+.card-front.bg-magenta {
+	background-image: url("./Website_ScreenShots/Typ.png");
+	background-size: cover;
+  background-position: center;
+
+}
+.card-front.bg-blue {
+	background-image: url("./Website_ScreenShots/Hogwarts.png");
+	background-size: 124%;
+  background-position: center top;
+}
+.card-front.bg-green {
+	background-color: #00c389;
+}
+.card-back {
+	background-color: #1e1e1e;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.card-back p.title {
+	color: #271C36;
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.card-back p.desc {
+	  color: #702B46;
+  
+    font-size: 2em;
+}
+.card-back p.link {
+	color: #271C36;
+	font-weight: bold;
+}
+
+.card-back.bg-violet {
+	background-color: rgba(248, 211, 84, .7);
+}
+.card-back.bg-magenta {
+	background-color: rgba(248, 211, 84, .7);}
+.card-back.bg-blue {
+	background-color: rgba(248, 211, 84, .7);}
+.card-back.bg-green {
+	background-color: rgba(248, 211, 84, .7);
+}
+
+/*-------- cards / flip effect --------*/
+.flex-item:hover .card-front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.flex-item:hover .card-back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+
+
+#contact {
+	background: #702B46;
+	position: relative;
+	padding: 50px 5px;
+}
+
+#contact h1 {
+	color: #F8D354;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin-left: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input, textarea {
+	font: 400 16px 'Montserrat', sans-serif;
+}
+
+input[type=submit] {
+  background-color: #F8D354;
+  color: #271C36;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Merienda', serif;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container label {
+	font-family: 'Merienda', serif;
+}
+
+.photo a {
+	font-size: 50px;
+	color: #F8D354;
+	padding: 10px;
+}
+
+.photo h2 {
+font-size: 40px;
+color: #FFFDE7;
+}
+
+.photo h3 {
+	font-size: 28px;
+
+}
+
+.photo h4 {
+	font-size: 20px;
+	color: #9D96AC;
+}
+
