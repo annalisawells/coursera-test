@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typo | Test-drive your text</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse|Montserra|Merienda" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Germania One';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Germania One'), local('GermaniaOne-Regular'), url(https://fonts.gstatic.com/s/germaniaone/v6/Fh4yPjrqIyv2ucM2qzBjeS3uywhP.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Indie Flower';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v10/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+
+
+        body {
+            background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/images/typetile.png");
+            background-repeat: repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin-top: 75px;
+        }
+
+        .outer-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.3);
+            margin-top: 10px;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: #FF6D04;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 10px;
+            line-height: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #665C3D;
+            font-size: .9rem;
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            font-family: "verdana";
+        }
+
+        .preview {
+            text-align: left;
+            background: white;
+            font-family: Helvetica;
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 10px;
+            border-radius: 10px[] min-height: 150px;
+            padding: 50px;
+            word-wrap: break-word;
+            border-radius: 8px;
+            border: 4px solid #E6B000;
+        }
+
+        textarea {
+            border: 4px solid #E6B000;
+            border-radius: 8px;
+            display: block;
+            font-family: "Helvetica-Light", "Helvetica", "Arial", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 30px auto 30px auto;
+            padding: 20px;
+        }
+
+        .formHolder {
+            background-color: #665C3D;
+            border-radius: 8px;
+            color: #FF6D04;
+            font-family: "verdana";
+            font-size: 0.75rem;
+            margin: 40px auto 0 auto;
+            padding: 20px;
+            text-transform: uppercase;
+            height: 50px;
+        }
+
+        .form {
+            display: inline;
+        }
+
+        .third {
+            height: 100%;
+            text-align: center;
+            padding: 10px;
+            float: left;
+        }
+
+
+        input {
+            display: inline;
+        }
+
+        #fonts {
+            margin-left: 4px;
+        }
+
+        #weight {
+        }
+
+        #size {
+            max-width: 70px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>TYP</h1>
+    <h2>Test-drive your text</h2>
+  </header>
+  <div class = "outer-container">
+  <div class="formHolder">
+    <form method="POST">
+      <div class="third">
+        Font Family <br><select name="font" id="font">
+    <option value="helvetica" id="helvetica">Helvetica</option>
+    <option value="times" id="times">Times</option>
+    <option value="impact" id="impact">Impact</option>
+    <option value="courier" id="courier">Courier</option>
+    <option value="verdana" id="verdana">Verdana</option>
+    <option value="Germania One" id="Germania One">Germania One</option>
+    <option value="Indie Flower" id="Indie Flower">Indie Flower</option>
+</select>
+      </div>
+      <div class="third">
+        Font Size  
+        <br>
+        <input type="text" placeholder="20" id="size">
+      </div>
+      <div class="third">
+        Font Weight <br> <select name="weight" id="weight">
+         <option value="normal">Normal</option>
+         <option value="bold">Bold</option>
+         <option value="bolder">Bolder</option>
+         <option value="lighter">lighter</option>
+       </select>
+      </div>
+    </form>
+   </div>
+  <div class="preview">Sample Font</div>
+  <textarea name="text" placeholder="Type something here and see what happens..." id="text" cols="30" rows="10"></textarea>
+  </div>
+
+</body>
+<script>
+    $(document).ready(() => {
+
+        $('#text').on('keyup', (event) => {
+            $('.preview').html($(event.currentTarget).val());
+        });
+
+        $('#font').on('change', (event) => {
+            $('.preview').css({
+                fontFamily: $(event.currentTarget).val()
+            })
+        });
+
+        $('#weight').on('change', (event) => {
+            $('.preview').css({
+                fontWeight: $(event.currentTarget).val()
+            })
+        });
+
+        $('#size').on('keyup', (event) => {
+            let fontSizeNew = $(event.currentTarget).val() + 'px';
+            $('.preview').css({
+                fontSize: fontSizeNew
+            })
+        });
+    })
+  </script>
+</html>
