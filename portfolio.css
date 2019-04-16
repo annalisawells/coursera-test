@@ -268,7 +268,7 @@ nav {
 
 
 .box1 {
-	background-image: url("./TheTeaCozy.png");
+	background-image: url("TheTeaCozy.png");
 	background-size: cover;
 }
 
@@ -379,18 +379,18 @@ nav {
 
 }
 .card-front.bg-violet {
-	background-image: url("./TheTeaCozy.png");
+	background-image: url("TheTeaCozy.png");
 	background-size: 124%;
   background-position: center top;
 }
 .card-front.bg-magenta {
-	background-image: url("./Typ.png");
+	background-image: url("Typ.png");
 	background-size: cover;
   background-position: center;
 
 }
 .card-front.bg-blue {
-	background-image: url("./Hogwarts.png");
+	background-image: url("Hogwarts.png");
 	background-size: 124%;
   background-position: center top;
 }
