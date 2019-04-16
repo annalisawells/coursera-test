@@ -2,17 +2,20 @@
 <html>
    <head>
    <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <link rel="stylesheet" type="text/css" href="teacozy2.css">
    <title>The Tea Cozy</title>
    </head>
    <body>
       <!-- Header -->
+      <button id="PortfolioBtn" title="Go back to my Portfolio"><a href="./index.html#portfolio"><i class="fas fa-caret-left"></i>  Back to Annalisa's Portfolio</a></button>
       <header>
          <div class="wrapper">
          <img class="logo" src="./img-tea-cozy-logo.png" alt="The Tea Cozy">
          <nav class="flex-nav">
             <ul>
+               <li onclick="scrollIt"><a href="./teacozy2.html">Home</a></li>
                <li onclick="scrollIt"><a href="#mission">Mission</a></li>
                <li onclick="scrollIt"><a href="#store">Featured Tea</a></li>
                <li onclick="scrollIt"><a href="#locations">Locations</a></li>
@@ -21,188 +24,199 @@
       </div>
       </header>
 
-            <!-- Mission Section -->
-          <div id="mission">
-               <div class="hero-video">
-                 <video _ngcontent-c20="" playsinline="" autoplay="" muted="" loop="" src="./Tea-time.mp4" poster="./Tea-time.jpg"></video></div>
-                  <div class="hero-content">
-                     <h2> Our Mission </h2>
-                     <h4> Small-batch, Hand-picked, Fair Trade, Sustainable Artisanally Curated Organic Tea</h4>
-                  </div>
-            </div> 
-            <!-- Store Section -->
-            <div id="store">
-               <h2>Tea of the Month</h2>
-               <h4> What's Steeping at The Tea Cozy?</h4>
-               <div class="wrapper">
-                  <div class="slider">
-                     <img src="./img-mission-background.jpg" id="current">
-                     <h1 id="caption"><a href='' disabled>Explore our favorite teas!</a></h1>
-                  </div>
+         <!-- Mission Section -->
+       <div id="mission">
+         <div class="hero-video">
+           <video _ngcontent-c20="" playsinline="" autoplay="" muted="" loop="" src="./Tea-time.mp4" poster="./Tea-time.jpg"></video>
+         </div>
+         <div class="hero-content">
+            <h2> Our Mission </h2>
+            <h4> Small-batch, Hand-picked, Fair Trade, Sustainable Artisanally Curated Organic Tea</h4>
+         </div>
+      </div> 
+      <!-- Store Section -->
+      <div id="store">
+         <div class="title">
+            <h2>Tea of the Month</h2>
+            <h3> What's Steeping at The Tea Cozy?</h3>
+         </div>
+         <div class="wrapper">
+            <div class="slider">
+               <img src="./img-mission-background.jpg" id="current">
+               <h1 id="caption"><a href=''>Explore our favorite teas!</a></h1>
+            </div>
 
-                  <div class="slider-nav">
-                  <div class= "slides">
-                     <ul>
-                        <li id="previousArrow" class="arrow">
-                           <div class="text-container">
-                              <span>←</span>
-                           </div>
-                        </li>
+            <div class="slider-nav">
+               <div class= "slides">
+                  <ul>
+                     <li id="previousArrow" class="arrow">
+                        <div class="text-container">
+                           <span>←</span>
+                        </div>
+                     </li>
 
-                        <li class="thumbnail" id="li1">
-                           <img src="./img-berryblitz.jpg" alt="Fall Berry Blitz Tea">
-                           <div class="text-container">
-                              <span link="./fallblitz.html">Fall Berry Blitz Tea</span>
-                           </div>
-                        </li>
+                     <li class="thumbnail" id="li1">
+                        <img src="./img-berryblitz.jpg" alt="Fall Berry Blitz Tea">
+                        <div class="text-container">
+                           <span link="./teas.html#berryblitz">Fall Berry Blitz Tea</span>
+                        </div>
+                     </li>
+            
+                     <li class="thumbnail" id="li2">
+                        <img src="./img-spiced-rum.jpg" alt="Spiced Rum Tea">
+                        <div class="text-container">
+                           <span link="./teas.html#spicedrum">Spiced Rum Tea</span>
+                        </div>
+                     </li>
                
-                        <li class="thumbnail" id="li2">
-                           <img src="./img-spiced-rum.jpg" alt="Spiced Rum Tea">
-                           <div class="text-container">
-                              <span>Spiced Rum<br>Tea</span>
-                           </div>
-                        </li>
-                  
-                        <li class="thumbnail" id="li3">
-                           <img src="./img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
-                           <div class="text-container">
-                              <span>Myrtle Ave<br>Tea</span>
-                           </div>
-                        </li>
-                        
-                        <li class="thumbnail" id="li4">
-                           <img src="./img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
-                           <div class="text-container">
-                              <span>Bedford Bizarre Tea</span>
-                           </div>
-                        </li>
-                        
-                        <li id="nextArrow" class="arrow">
-                           <div class="text-container">
-                              <span>→</span>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-         
-            <!-- Locations section-->
-            <div id="locations">
-               <h2>Locations</h2>
-               <div class="location-cards">
-                  <div class="card">
-                     <h3>Downtown</h3>
-                     <p>384 West 4th St</p>
-                     <p>Suite 108</p>
-                     <p>Portland, Maine</p>
-                  </div>
-                  <div class="card">
-                     <h3>East Bayside</h3>
-                     <p>3433 Phisherman's Avenue</p>
-                     <p>(Northwest Corner)</p>
-                     <p>Portland, Maine</p>
-                  </div>
-                  <div class="card">
-                     <h3>Oakdale</h3>
-                     <p>515 Crescent Avenue</p>
-                     <p>Second Floor</p>
-                     <p>Portland, Maine</p>
-                  </div>
+                     <li class="thumbnail" id="li3">
+                        <img src="./img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
+                        <div class="text-container">
+                           <span link="./teas.html#myrtle">Myrtle Ave Tea</span>
+                        </div>
+                     </li>
+                     
+                     <li class="thumbnail" id="li4">
+                        <img src="./img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+                        <div class="text-container">
+                           <span link="./teas.html#bedford">Bedford Bizarre Tea</span>
+                        </div>
+                     </li>
+                     
+                     <li id="nextArrow" class="arrow">
+                        <div class="text-container">
+                           <span>→</span>
+                        </div>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div>
+      </div>
+      
+      <!-- Locations section-->
+      <div id="locations">
+         <h2>Locations</h2>
+         <div class="location-cards">
+            <div class="card">
+               <h3>Downtown</h3>
+               <p>384 West 4th St</p>
+               <p>Suite 108</p>
+               <p>Portland, Maine</p>
+            </div>
+            <div class="card">
+               <h3>East Bayside</h3>
+               <p>3433 Phisherman's Avenue</p>
+               <p>(Northwest Corner)</p>
+               <p>Portland, Maine</p>
+            </div>
+            <div class="card">
+               <h3>Oakdale</h3>
+               <p>515 Crescent Avenue</p>
+               <p>Second Floor</p>
+               <p>Portland, Maine</p>
+            </div>
          </div>
-         <!-- Contact Section -->
-         <div id="contact">
+      </div>
+      <!-- Contact Section -->
+      <div id="contact">
+         <h2>Contact Us</h2>
+         <div class="contact-card">
             <h2>The Tea Cozy</h2>
-            <h5>contact@theteacozy.com</h5>
-            <h5>(917)555-8904</h5>
+            <h3>contact@theteacozy.com</h3>
+            <h3>(917)555-8904</h3>
          </div>
-         <!-- Footer Section -->
-         <footer>
-            <h5>&copy; The Tea Cozy 2018, Annalisa Wells {fictional Website Concept}</h5>
-         </footer>
+      </div>
+      <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i>
+      </button>
+      <!-- Footer Section -->
+      <footer>
+         <h5>&copy; The Tea Cozy 2018, Annalisa Wells {fictional Website Concept}</h5>
+      </footer>
+
+      <script type = "text/javascript">
+
+         const current = document.getElementById('current');
+         const thumbnails = document.querySelectorAll('.slides li.thumbnail')
+         const previousArrow = document.getElementById("previousArrow");
+         const nextArrow = document.getElementById('nextArrow');
+         var currentThumbnail = null;
+         const caption = document.getElementById('caption');
 
 
-<script type="text/javascript">
+         var clicked = function(event) {
+             setCurrentThumbnail(event.target.closest('li'));
+         };
 
-//click on thumbnail or link text to select
-//replace slider img with selected img
-//replace h1 innerHTML with img alt text
-//have arrows scroll previous/next/loop around when done
-//h1 and image click link to tea's specific page
+         function setCurrentThumbnail(thumbnail) {
+             if (currentThumbnail !== null) {
+                 currentThumbnail.classList.toggle("selected");
+             }
 
-const current = document.getElementById('current');
-const thumbnails = document.querySelectorAll('.slides li.thumbnail')
-const previousArrow = document.getElementById("previousArrow");
-const nextArrow = document.getElementById('nextArrow');
-var currentThumbnail = null;
-const caption = document.getElementById('caption');
+             currentThumbnail = thumbnail;
+             current.src = thumbnail.querySelector('img').src;
+             var currentSpan = thumbnail.querySelector('span');
+             var currentSpanLink = currentSpan.getAttribute('link');
 
+             if (currentSpanLink) {
+                 var aTag = document.createElement('a');
+                 aTag.href = currentSpanLink;
+                 aTag.innerText = currentSpan.innerText;
+                 caption.innerHTML = aTag.outerHTML;
+             } else {
+                 caption.innerText = currentSpan.innerText;
+             }
 
-var clicked = function(event){
-   setCurrentThumbnail(event.target.closest('li'));
-};
+             currentThumbnail.classList.toggle("selected");
+         };
 
-function setCurrentThumbnail(thumbnail) {
-   if(currentThumbnail !== null){
-      currentThumbnail.classList.toggle("selected");
-   }
+         function nextThumbnail() {
+             if (currentThumbnail !== null && currentThumbnail.nextElementSibling.classList.contains('thumbnail')) {
+                 setCurrentThumbnail(currentThumbnail.nextElementSibling);
+             } else {
+                 setCurrentThumbnail(document.getElementById("li1"));
+             }
+         };
 
-   currentThumbnail = thumbnail;
-   current.src = thumbnail.querySelector('img').src;
-   var currentSpan = thumbnail.querySelector('span');
-   var currentSpanLink = currentSpan.getAttribute('link');
+         function previousThumbnail() {
+             if (currentThumbnail !== null && currentThumbnail.previousElementSibling.classList.contains('thumbnail')) {
+                 setCurrentThumbnail(currentThumbnail.previousElementSibling);
+             } else {
+                 setCurrentThumbnail(document.getElementById("li4"));
+             }
+         };
 
-   if(currentSpanLink){
-      var aTag = document.createElement('a');
-      aTag.href = currentSpanLink;
-      aTag.innerText = currentSpan.innerText;
-      caption.innerHTML = aTag.outerHTML;
-   }
-   else{
-      caption.innerText = currentSpan.innerText;
-   }
+         function scrollIt(element) {
+             window.scrollTo({
+                 'behavior': 'smooth',
+                 'left': 0,
+                 'top': element.offsetTop
+             });
+         }
 
+         window.onscroll = function() {
+             scrollFunction()
+         };
 
-   currentThumbnail.classList.toggle("selected");
-};
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 document.getElementById("topBtn").style.display = "block";
+             } else {
+                 document.getElementById("topBtn").style.display = "none";
+             }
+         }
 
-function nextThumbnail () {
-   if(currentThumbnail !== null && currentThumbnail.nextElementSibling.classList.contains('thumbnail'))
-   { 
-      setCurrentThumbnail(currentThumbnail.nextElementSibling);
-   }
-   else {
-      setCurrentThumbnail(document.getElementById("li1"));
-   }
-};
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0; // For Safari
+             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
 
-function previousThumbnail () {
-   if(currentThumbnail !== null && currentThumbnail.previousElementSibling.classList.contains('thumbnail'))
-   { 
-      setCurrentThumbnail(currentThumbnail.previousElementSibling);
-   }
-   else {
-      setCurrentThumbnail(document.getElementById("li4"));
-   }
-};
+         thumbnails.forEach(li => li.addEventListener('click', clicked));
+         previousArrow.addEventListener('click', previousThumbnail);
+         nextArrow.addEventListener('click', nextThumbnail);
 
-function scrollIt(element) {
-  window.scrollTo({
-    'behavior': 'smooth',
-    'left': 0,
-    'top': element.offsetTop
-  });
-}
+      </script>
 
-thumbnails.forEach(li => li.addEventListener('click', clicked));
-previousArrow.addEventListener('click', previousThumbnail);
-nextArrow.addEventListener('click', nextThumbnail);
-
-
-
-
-</script>
    </body>
 </html>

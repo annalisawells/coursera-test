@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="teacozy2.css">
+   <title>The Tea Cozy</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <button id="PortfolioBtn" title="Go back to my Portfolio"><a href="./index.html#portfolio"><i class="fas fa-caret-left"></i>  Back to Annalisa's Portfolio</a></button>
+      
+      <header>
+         <div class="wrapper">
+         <img class="logo" src="./img-tea-cozy-logo.png" alt="The Tea Cozy">
+         <nav class="flex-nav">
+            <ul>
+               <li onclick="scrollIt"><a href="./teacozy2.html">Home</a></li>
+               <li onclick="scrollIt"><a href="./teacozy2.html#mission">Mission</a></li>
+               <li onclick="scrollIt"><a href="#store">Featured Tea</a></li>
+               <li onclick="scrollIt"><a href="./teacozy2.html/#locations">Locations</a></li>
+            <ul>
+         </nav>
+      </div>
+      </header>
+
+         <!-- Mission Section -->
+       <div id="mission">
+         <div class="hero-video">
+           <video _ngcontent-c20="" playsinline="" autoplay="" muted="" loop="" src="./Tea-time.mp4" poster="./Tea-time.jpg"></video>
+         </div>
+         <div class="hero-content">
+            <h2> Tea Selection </h2>
+         </div>
+      </div> 
+      <!-- Store Section -->
+      <div id="store">
+         <div class="teas">
+            <h3>Featured Teas</h3>
+            <div class="featured-teas">
+               <div id="berryblitz" class="tea-cards card1">
+                  <img src="./img-berryblitz.jpg" alt="Fall Berry Blitz Tea">
+                  <div class="description">
+                     <h4>Fall Berry Blitz</h4>
+                     <p>Combining different fall berries with a bold black tea base, Fall Berry Blitz gives you tart frutiness and a smooth sip all in one!</p>
+                  </div>
+               </div>
+               <div id="spicedrum" class="tea-cards card2">
+                  <div class="description">
+                     <h4>Spiced Rum</h4>
+                     <p>Combining different fall berries with a bold black tea base, Fall Berry Blitz gives you tart frutiness and a smooth sip all in one!</p>
+                  </div> 
+                  <img src="./img-spiced-rum.jpg" alt="Spiced Rum Tea">
+               </div>
+               <div id="myrtle" class="tea-cards card1">
+                  <img src="./img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
+                  <div class="description">
+                     <h4>Myrtle Ave</h4>
+                     <p>Combining different fall berries with a bold black tea base, Fall Berry Blitz gives you tart frutiness and a smooth sip all in one!</p>
+                  </div>
+               </div>
+               <div id="bedford" class="tea-cards card2">
+                  <div class="description">
+                     <h4>Bedford Bizarre</h4>
+                     <p>Combining different fall berries with a bold black tea base, Fall Berry Blitz gives you tart frutiness and a smooth sip all in one!</p>
+                  </div>
+                  <img src="./img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+               </div>
+            </div>
+         </div>
+          <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i>
+         </button>
+         
+      <!-- Footer Section -->
+      <footer>
+         <h5>&copy; The Tea Cozy 2018, Annalisa Wells {fictional Website Concept}</h5>
+      </footer>
+
+
+<script type="text/javascript">
+
+function scrollIt(element) {
+  window.scrollTo({
+    'behavior': 'smooth',
+    'left': 0,
+    'top': element.offsetTop
+  });
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+   </body>
+</html>
