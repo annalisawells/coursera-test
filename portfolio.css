@@ -149,11 +149,30 @@ nav {
 	display: inline-block;
 }
 
-#about h1, #portfolio h1 {
+#about h1, #portfolio h1, .exercises h1 {
 	font-size: 6vmin;
 	margin: 0;
 	color: #9D96AC;
 }
+
+.exercises {
+	height: 500px;
+	padding: 50px;
+}
+
+.exercises ul li {
+	list-style: none;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.exercises a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #271C36;
+	line-height: 2em;
+} 
 
 
 .aboutme {
@@ -243,8 +262,6 @@ nav {
 	flex-direction: row;
 	max-height: 100%;
 }
-
-
 
 /*-------- flex container --------*/
 .fc {
