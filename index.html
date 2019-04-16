@@ -13,9 +13,9 @@
       <nav id="navbar">
          <div class="innerNav">
             <span class="nav-name">Annalisa Wells</span>
-            <a href="#contact"> Contact</a></a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
+            <a onclick="scrollIt(document.getElementById('contact'))"> Contact</a>
+            <a onclick="scrollIt(document.getElementById('portfolio'))">Portfolio</a>
+            <a onclick="scrollIt(document.getElementById('about'))">About</a>
          </div>
       </nav>
       <div class="content">
@@ -30,9 +30,9 @@
             </h3>
          </div>
          <div class="subnav">
-            <a class="subnav-link" id ="buttonNav" href="#about">About</a>
-            <a class="subnav-link" href="#portfolio">Portfolio</a>
-            <a class="subnav-link" href="#contact"> Contact</a>
+            <a onclick="scrollIt(document.getElementById('about'))" class="subnav-link" id="buttonNav">About</a>
+            <a onclick="scrollIt(document.getElementById('portfolio'))" class="subnav-link">Portfolio</a>
+            <a onclick="scrollIt(document.getElementById('contact'))" class="subnav-link"> Contact</a>
             <div class="social">
                <a href="https://www.facebook.com/annalisawells"><i class="fab fa-facebook-square"></i></a>
                <a href="https://github.com/annalisawells"><i class="fab fa-github-square"></i></a>
@@ -87,25 +87,6 @@
       </div>
       <div id="portfolio">
       <h1>Concepts Portfolio</h1>
-      <!-- mouseover: bottom left bar appears with keywords highlighted in that project
-         The Tea Cozy: HTML, CSS, Flexbox
-         Typ: jQuery, CSS, HTML, responsive form, 
-         Musicon: Handlebars, CSS, HTML, JavaScript/// new Bootstrap page
-         Checkboxes: Vanilla JS vs jQuery
-         Sort without articles: add before -> animate right to AFTER/sorted: JavaScript, HTML, CSS
-         CSS Grid Example
-         Hogwarts
-         
-                      -->
-      <!--  <div class="flex-gallery">
-         <div class="box box1"> <span class="info">HTML, CSS, FlexBox</span></div>
-         <div class="box box2">Website #2: CSS Grid</div>
-         <div class="box box3">Website #3: Vanilla JS 30 day challenge links</div>
-         <div class="box box4">Website #4: jQuery</div>
-         <div class="box box5">Website #5: Bootstrap</div>
-         <div class="box box6">Website #6: SASS</div>
-         </div>
-         </div> -->
       <div class="cont">
          <div class="row">
             <!-- flex-container -->
@@ -153,7 +134,7 @@
                         </div>
                         <div class="card-back bg-blue">
                            <p class="title">Hogwarts Adventures</p>
-                           <p class="desc">HTML, CSS, Javascript</p>
+                           <p class="desc">HTML, CSS, JavaScript</p>
                      <a href="https://annalisawells.github.io/Hogwarts_Finder/Hogwarts/index.html"><p class="link">Demo <i class="fa fa-chevron-circle-right"></i></p></a>
                      </div>
                      </a>
@@ -169,9 +150,9 @@
                         <div class="card-front bg-green">
                         </div>
                         <div class="card-back bg-green">
-                           <p class="title">Concept 4</p>
-                           <p class="desc">Who knows! Probably HTML and CSS though</p>
-                     <a href="../../TeaCozy/index.html"><p class="link">Demo <i class="fa fa-chevron-circle-right"></i></p></a>
+                           <p class="title">JavaScript Exercises</p>
+                           <p class="desc">A list of one-shot JavaScript exercises</p>
+                     <a href="./JSpractice.html"><p class="link">Demo <i class="fa fa-chevron-circle-right"></i></p></a>
                      </div>
                      </a>
                      <!-- /card -->
@@ -186,17 +167,7 @@
          <h1>Contact Me</h1>
          <div class="flex-container" style="align-items: center; justify-content: center;">
             <div class="container" style="margin-left: 0;">
-               <!-- <form action="./form-to-email.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  <input type="submit" value="Submit">
-               </form>
-            </div>
-            <div class="photo">-->
+
                <h2>Feel free to contact me directly at annalisawells@gmail.com</h2>
                <h3>Currently available for hire</h3>
                <h4>Based in Broomfield, CO</h4>
@@ -208,9 +179,7 @@
             </div>
          </div>
       </div>
-      <footer>
-         <!-- Reiterate nav bar, name and photo -->
-      </footer>
+
 	
       <script type="text/javascript">
          const navbar = document.getElementById("navbar");
@@ -224,7 +193,7 @@
          } else {
              navbar.classList.remove('sticky');
          }
-         }
+         };
      
          window.onscroll = toggleSticky;
 
@@ -236,7 +205,16 @@
 					function (){
 						$("span.info").removeClass("info-active");
 					});
-});    
+         });    
+
+              function scrollIt(element) {
+                  window.scrollTo({
+                     'behavior': 'smooth',
+                     'left': 0,
+                     'top': element.offsetTop - 50
+                  });
+               }
+
       </script>
    </body>
 </html>

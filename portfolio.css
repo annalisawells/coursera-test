@@ -9,7 +9,6 @@ dark dark: black;*/
 
 
 html {
-	scroll-behavior: smooth;
 	height: 100%;
 }
 
@@ -53,6 +52,7 @@ nav {
 	display: inline-block;
 	color: #F8D354;
 	padding: 19px 35px;
+	cursor: pointer;
 }
 
 .innerNav a:hover {
@@ -124,6 +124,7 @@ nav {
 	padding: 12px;
 	color: #F8D354;
 	width: 230px;
+	cursor: pointer;
 }
 
 .subnav-link {
