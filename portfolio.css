@@ -417,7 +417,44 @@ nav {
 }
 
 
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 100, 0.2);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 25px;
+}
 
+#topBtn:hover {
+  background-color: rgba(0, 0, 100, 0.5);
+}
+
+#PortfolioBtn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 100, 0.6);
+  color: white;
+  cursor: pointer;
+ 
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+#PortfolioBtn:hover {
+  background-color: rgba(0, 0, 100, 0.5);;
+}
 
 
 @media only screen and (max-device-width: 1366px) {
