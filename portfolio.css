@@ -247,6 +247,7 @@ nav {
 
 #portfolio {
 	margin-top: 75px;
+
 }
 
 #portfolio h1 {
@@ -261,6 +262,10 @@ nav {
 	align-items: center;
 	flex-direction: row;
 	max-height: 100%;
+}
+
+.cont {
+	margin: 150px;
 }
 
 /*-------- flex container --------*/
@@ -355,7 +360,6 @@ nav {
 }
 .card-front.bg-green {
 	background-image: url("clock.png");
-	background-color: #00c389;
 	background-position: center;
 	background-size: cover;
 }
@@ -372,7 +376,6 @@ nav {
 }
 .card-back p.desc {
 	  color: #702B46;
-  
     font-size: 2em;
 }
 .card-back p.link {
