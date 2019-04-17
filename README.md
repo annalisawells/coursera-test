@@ -13,7 +13,7 @@ Feel free to contact me directly at *annalisawells@gmail.com* with any questions
 * [Status](#status)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This project is a practical integration and compilation of all of the technologies, frameworks, and design principles that I have taught myself over the last 8 months.
 	
 ## Technologies
 Project is created with:
