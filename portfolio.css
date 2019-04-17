@@ -354,7 +354,10 @@ nav {
   background-position: center top;
 }
 .card-front.bg-green {
+	background-image: url("clock.png");
 	background-color: #00c389;
+	background-position: center;
+	background-size: cover;
 }
 .card-back {
 	background-color: #1e1e1e;
