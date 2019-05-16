@@ -354,9 +354,9 @@ nav {
 
 }
 .card-front.bg-blue {
-	background-image: url("Hogwarts.png");
-	background-size: 124%;
-  background-position: center top;
+    background-image: url("Hogwarts_redeisgn1.png");
+    background-size: cover;
+    background-position: top left;
 }
 .card-front.bg-green {
 	background-image: url("clock.png");
