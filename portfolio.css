@@ -219,7 +219,7 @@ nav {
 
 
 .technical {
-	flex: 3;
+	flex: 2;
 	background: #FFFDE7;
 	color: #271C36;
 	border-radius: 10px;
@@ -232,12 +232,12 @@ nav {
 }
 
 .soft-skills {
-	flex: 2;
+	flex: 1;
 	background: #702B46;
 	color: #FFFDE7;
 	border-radius: 10px;
 	margin: 10px 30px;
-	font-size: 1.75vmin;
+	font-size: 1.25em;
 }
 
 .soft-skills h2 {
@@ -417,11 +417,15 @@ nav {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  color: white;
   padding: 30px;
   margin-left: 30px;
 }
 
+.mini a {
+	font-size: 2.5em;
+	color: #F8D354;
+}
 
 #topBtn {
   display: none; /* Hidden by default */
@@ -441,25 +445,6 @@ nav {
 
 #topBtn:hover {
   background-color: rgba(0, 0, 100, 0.5);
-}
-
-#PortfolioBtn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 100, 0.6);
-  color: white;
-  cursor: pointer;
- 
-  border-radius: 5px;
-  font-size: 25px;
-}
-
-#PortfolioBtn:hover {
-  background-color: rgba(0, 0, 100, 0.5);;
 }
 
 
