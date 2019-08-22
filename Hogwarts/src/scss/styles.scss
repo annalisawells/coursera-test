@@ -1,0 +1,94 @@
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Fonts
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_XxrBbg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+
+// Variables and Overrides 
+
+$main-font: "Montserrat", sans-serif;
+$secondary-font: "Acme", sans-serif;
+$body-bg: #181F1C;
+$light-body-bg: #E5FFE9;
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin: auto;
+    color: $white;
+    font-family: $main-font;
+    background-color: $body-bg;
+}
+
+.navbar-brand {
+    font-family: $secondary-font;
+    font-size: 2rem;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+.jumbotron {
+    height: 350px;
+    background-image: url("../assets/Hero.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display-4 {
+    font-family: $secondary-font;
+}
+
+.intro {
+    margin-left: 200px;
+}
+
+.features {
+    height: 730px; 
+}
+
+.custom-bg {
+    background-image: url(../assets/bkg-design.png);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+}
+
+.custom-light-bg {
+    background-color: $light-body-bg;
+}
+
+
+.card-img-top {
+    width: 190px;
+    height: 190px;;
+    object-fit: contain;
+}
+
+footer {
+    h5 {
+        font-size: .75rem;
+    }
+    P {
+        font-size: .7rem;
+    }
+}
+
