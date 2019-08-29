@@ -2,12 +2,6 @@
 # Created by https://www.gitignore.io/api/node,windows
 # Edit at https://www.gitignore.io/?templates=node,windows
 
-# Ignore folders named 
-/Hogwarts/
-/KuChaRedesign/
-/Redesigns/
-
-
 ### Node ###
 # Logs
 logs
