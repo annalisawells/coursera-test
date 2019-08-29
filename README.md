@@ -20,10 +20,10 @@ Project is created with:
 * HTML5
 * CSS3
 * JavaScript and jQuery
+* Bootstrap
 
 I am constantly learning new technologies and hope to incorporate the following in the near future:
-* AngularJS
-* Bootstrap
+* REACT
 	
 ## Status
 This is an ongoing project meant to showcase my skills, so I will be constantly adding to it's code both in examples complexity. I am currently taking online classes both in AngularJS and UI Design, so I am confident that you will see small changes every day that reflect my increasing knowledge bank and fluency.
