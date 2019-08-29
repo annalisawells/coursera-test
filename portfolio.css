@@ -174,7 +174,6 @@ nav {
 	line-height: 2em;
 } 
 
-
 .aboutme {
 	align-items: center;
 	align-content: center;
@@ -217,7 +216,6 @@ nav {
 	margin: 10px 0;
 }
 
-
 .technical {
 	flex: 2;
 	background: #FFFDE7;
@@ -244,10 +242,8 @@ nav {
 	color: #FFFDE7;
 }
 
-
 #portfolio {
 	margin-top: 75px;
-
 }
 
 #portfolio h1 {
@@ -327,27 +323,31 @@ nav {
 	border: 3px solid #702B46;
 	border-radius: 6px;
 }
+
 .card-front i.tile-icon {
 	display: block;
 	margin: 10px auto 20px auto;
 	text-align: center;
 }
+
 .card-front h4 {
 	font-size: 18px;
 	font-weight: normal;
 	margin: 10px 0;
 }
+
 .card-front p.detail {
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0;
-
 }
+
 .card-front.bg-violet {
 	background-image: url("TheTeaCozy.png");
 	background-size: cover;
   background-position: center top;
 }
+
 .card-front.bg-magenta {
 	background-image: url("KCRedesign_landing1.png");
 	background-size: cover;
@@ -359,27 +359,38 @@ nav {
     background-size: cover;
     background-position: top left;
 }
+
 .card-front.bg-green {
 	background-image: url("clock.png");
 	background-position: center;
 	background-size: cover;
 }
+
 .card-back {
 	background-color: #1e1e1e;
 	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 }
+
 .card-back p.title {
 	color: #271C36;
 	margin-top: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
 .card-back p.desc {
-	  color: #702B46;
+	color: #702B46;
     font-size: 2em;
 }
-.card-back p.link {
+
+p.desc-sm {
+	font-size: 1.75em;
+	text-decoration: none;
+}
+
+.card-back p.link,
+.card-back span.link {
 	color: #271C36;
 	font-weight: bold;
 }
@@ -387,6 +398,7 @@ nav {
 .card-back.bg-violet {
 	background-color: rgba(248, 211, 84, .7);
 }
+
 .card-back.bg-magenta {
 	background-color: rgba(248, 211, 84, .7);}
 .card-back.bg-blue {
@@ -404,7 +416,6 @@ nav {
 	-webkit-transform: rotateY(0);
 	transform: rotateY(0);
 }
-
 
 #contact {
 	background: #702B46;
