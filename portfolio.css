@@ -475,8 +475,15 @@ p.desc-sm {
 	}
 }
 
+@media only screen and (min-device-width : 326px) and (max-device-width : 877px) {
+	.innerNav a {
+		font-size: 1.45em;
+		padding: 19px 10px;
+	}
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 325px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 325px) {
 	nav {
 		height: auto;
 	}
