@@ -89,9 +89,6 @@ nav {
 	font-size: 5em;
 	margin: 0;
 	color: #271C36;
-	/*text-shadow: -1px -1px 0px #E3C176,
-    3px 3px 0px #E3C176,
-    6px 6px 0px #271C36;*/
 }
 
 .blurb {
@@ -124,6 +121,7 @@ nav {
 	text-transform: uppercase;
 	font-size: 2.5em;
 	padding: 12px;
+	margin: 10px;
 	color: #F8D354;
 	width: 250px;
 	cursor: pointer;
@@ -478,7 +476,7 @@ p.desc-sm {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 325px) and (max-device-width : 480px) {
 	nav {
 		height: auto;
 	}
@@ -512,12 +510,16 @@ p.desc-sm {
 		padding: 0;
 	}
 
+	.technical, .soft-skills {
+		font-size: 2em;
+	}
+
 	.flex-item {
 		margin: 25px;
 	}
 
-	#contact h1 {
-		font-size: 3.5em;
+	#contact {
+		font-size: 2em;
 	}
 
 	.mini a {
