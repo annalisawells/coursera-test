@@ -42,7 +42,7 @@ nav {
 .nav-name {
 	padding: 15px;
 	width: 200px;
-	font-size: 2.25vmax;
+	font-size: 2.25em;
 	font-family: 'Merienda', serif;
 }
 
@@ -476,3 +476,59 @@ p.desc-sm {
 		background-attachment: scroll;
 	}
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	nav {
+		height: auto;
+	}
+	
+	nav-name {
+		min-height: 70px;
+		text-transform: none;
+	}
+
+	.innerNav a {
+		font-size: 1.85em;
+		padding: 19px 25px;
+	}
+
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.subnav a {
+		margin-top: 10px;
+	}
+
+	.social a {
+		color: #F8D354;
+	}
+
+	.aboutme {
+		width: 100%;
+		margin-top: 35px;
+		padding: 0;
+	}
+
+	.photo img {
+		max-height: 250px;
+	}
+
+	.flex-item {
+		margin: 10px;
+	}
+
+	#contact h1 {
+		font-size: 3.5em;
+	}
+
+	.mini a {
+		margin: 25px;
+	}
+
+	#topBtn {
+		font-size: 85px;
+	}
+
+	}
